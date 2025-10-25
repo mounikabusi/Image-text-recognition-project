@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Text Extraction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Text Recognition</h1>
+        <br>
+        <form action="/extract_text" method="post" enctype="multipart/form-data">
+            <label for="file-input" class="custom-file-button">Choose File</label>
+            <input type="file" id="file-input" name="file" required /><br>
+            <br><span id="file-name" class="file-name">No file chosen</span>
+            <button type="submit" class="button">Extract Text</button>
+        </form>
+
+      
+       {% if result %}
+       <div id="result">{{ result }}</div>
+   {% endif %}
+   {% if error %}
+       <div id="error">{{ error }}</div>
+   {% endif %}
+
+    </div>
+
+    <script>
+        
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            var fileName = event.target.files[0] ? event.target.files[0].name : 'No file chosen';
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  background: lavender;
+  background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
+}
+.container {
+  position: relative;
+  top: 8pc;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background-image: linear-gradient(rgb(250, 255, 175), rgb(247, 237, 100));
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #fd0cc5;
+  background-image: linear-gradient(45deg, #a91fff 0%, #db1ae9 51%, #ff2fe3 100%);
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.custom-file-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.custom-file-button:active {
+  transform: scale(0.95);
+}
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0px 0px 14px -7px #fd0cc5;
+  background-image: linear-gradient(45deg, #a91fff 0%, #db1ae9 51%, #ff2fe3 100%);
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+.button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.button:active {
+  transform: scale(0.95);
+}
+.file-name {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+#result,
+#error {
+  margin-top: 20px;
+  border: 1px solid #cc00ff;
+  padding: 10px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Error message styling */
+#error {
+  color: red;
+}
+
+.file-name {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
