@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import pytesseract
 from PIL import Image
 import io
-pytesseract.pytesseract.tesseract_cmd = r'C://Program Files//Tesseract-OCR//tesseract.exe'
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -28,4 +28,4 @@ def extract_text():
         return render_template('index.html', error=f'Error: {str(e)}')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
